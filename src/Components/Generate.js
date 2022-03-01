@@ -23,7 +23,7 @@ const Generate = ({binds, onCopy}) => {
          <p>Copy and Paste the following commands in your game's <i>autoexec.cfg</i></p>
          {show && <div className="binds">
              <button style = {cpyBtnStyles} onClick={onCopy}>Copy</button>
-             <p id="result"> //buy binds <br />
+             <p id="result"> '//buy binds' <br />
              {binds.map(bind => 
               `bind "${bind[0]}" "${bind.filter(e => e !== bind[0]).join(" ")}" \n`)  } </p>
            
